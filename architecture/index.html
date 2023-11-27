@@ -357,7 +357,7 @@ starting point when reading the code base.</p>
 <h3 id="observability"><a class="header" href="#observability">Observability</a></h3>
 <p>The <a href="https://tracing.rs">tracing</a> crate is used for structured, hierarchical
 event output and logging. We also integrate <a href="https://prometheus.io">Prometheus</a>
-for light-weight metric output. See the <a href="./style.html">style</a> documentation for
+for light-weight metric output. See the <a href="../practices/style.html">style</a> documentation for
 more information on the usage.</p>
 <h3 id="testing"><a class="header" href="#testing">Testing</a></h3>
 <p>Rust has built-in support for writing unit tests by marking functions
@@ -389,10 +389,10 @@ expensive --timeout=1800 near-client near_client tests::catching_up::test_catchu
 </code></pre>
 <p>For more details regarding nightly tests see <code>nightly/README.md</code>.</p>
 <p>Note that what counts as a slow test isn’t exactly defined as of now.
-If it takes just a couple seconds than it’s probably fine.  Anything
+If it takes just a couple seconds then it’s probably fine.  Anything
 slower should probably be classified as an expensive test.  In
 particular, if libtest complains the test takes more than 60 seconds
-than it definitely is and expensive test.</p>
+then it definitely is and expensive test.</p>
 
                     </main>
 
